@@ -1,0 +1,26 @@
+a.homelink{
+  color: #ff6347;
+  text-decoration: none;
+}
+
+.sidebar {
+  background: #fff;
+  padding: 25px;
+  width: 300px;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+
+a.d-flex.align-items-center.links {
+  text-decoration: none;
+}
+
+article.p-4.rounded.shadow-sm.border-left.mb-4.article-border {
+  border-left: 2px solid #0d6efd;
+}
