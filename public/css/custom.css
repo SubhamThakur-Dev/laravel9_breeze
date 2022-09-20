@@ -1,0 +1,37 @@
+img.img-fluid.aboutImg {
+  max-width: 100%;
+  height: auto;
+}
+.clear {
+  clear: both;
+}
+
+.details-container {
+  position: relative;
+  display: flex;
+}
+
+.about {
+  margin-left: 30px;
+}
+
+.d-flex.hidden-extra-pagination .hidden.sm\:flex-1.sm\:flex.sm\:items-center.sm\:justify-between {
+  display: none;
+}
+
+.d-flex.hidden-extra-pagination span.relative.z-0.inline-flex.shadow-sm.rounded-md {
+  display: none;
+}
+
+.d-flex.hidden-extra-pagination nav.flex.items-center.justify-between {
+  margin-bottom: 25px;
+}
+
+img.card-img-top.post-img {
+  width: 50%;
+}
+
+.container.content-center {
+  margin: 0 auto;
+  text-align: center;
+}
