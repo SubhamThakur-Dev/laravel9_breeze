@@ -14,7 +14,9 @@
                     <main class="container-fluid">
                         <div class="jumbotron jumbotron-fluid rounded bg-white border-0 shadow-sm border-left px-4">
                             <div class="container">
-                                <h3 class="logged-in_heading">You're logged in! <br>Go to <a href="<?php echo url('/'); ?>" class="homelink">Website</a></h3>
+                                <article class="p-4 rounded shadow-sm border-left mb-4 article-border">
+                                    <h3 class="logged-in_heading">You're logged in! <br>Go to <a href="<?php echo url('/'); ?>" class="homelink">Website</a></h3>
+                                </article>
                             </div>
                         </div>                    
                         <section class="row">
@@ -28,7 +30,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <article class="p-4 rounded shadow-sm border-left mb-4 article-border">
-                                    <a href="route('contacts.index')" class="d-flex align-items-center links">
+                                    <a href="{{route('contacts.index')}}" class="d-flex align-items-center links">
                                         <span class="bi bi-person h5"></span>
                                         <h5 class="ml-2">Contacts</h5>
                                     </a>
@@ -36,7 +38,7 @@
                             </div>
                             <div class="col-md-6 col-lg-4">
                                 <article class="p-4 rounded shadow-sm border-left mb-4 article-border">
-                                    <a href="route('posts.index')" class="d-flex align-items-center links">
+                                    <a href="{{route('posts.index')}}" class="d-flex align-items-center links">
                                         <span class="bi bi-person-check h5"></span>
                                         <h5 class="ml-2">Posts</h5>
                                     </a>
