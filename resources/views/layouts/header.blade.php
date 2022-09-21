@@ -7,10 +7,8 @@
         <meta name="author" content="" />
         <title>Blog Home - Start Bootstrap Template</title>
         <link rel="icon" type="image/x-icon" href="{{asset('assets/favicon.ico')}}" />
-        <link href="{{ asset('/css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ asset('/css/custom.css') }}" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -29,12 +27,12 @@
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{ Auth::user()->name }}<b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li class="divider"></li>
-                                        <li><a href="<?php echo url('/'); ?>/dashboard">Dasboard</a></li>
                                         <li>
-                                            <!-- Authentication -->
+                                            <a href="<?php echo url('/'); ?>/dashboard">{{ __('Dashboard') }}</a>
+                                        </li>
+                                        <li>
                                             <form method="POST" action="{{ route('logout') }}">
                                                 @csrf
-
                                                 <x-dropdown-link :href="route('logout')"
                                                         onclick="event.preventDefault();
                                                                     this.closest('form').submit();">
@@ -60,11 +58,9 @@
         <footer class="py-5 bg-dark">
             <div class="container"><p class="m-0 text-center text-white">Laravel By Subham</p></div>
         </footer>
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- Core theme JS-->
         <script src="{{ asset('/js/scripts.js') }}"></script>
     </body>
 </html>
