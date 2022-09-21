@@ -15,7 +15,7 @@
                         <div class="jumbotron jumbotron-fluid rounded bg-white border-0 shadow-sm border-left px-4">
                             <div class="container">
                                 <article class="p-4 rounded shadow-sm border-left mb-4 article-border">
-                                    <h3 class="logged-in_heading">You're logged in! <br>Go to <a href="<?php echo url('/'); ?>" class="homelink">Website</a></h3>
+                                    <h3 class="logged-in_heading">You're logged in! <br>Go to <a href="<?php echo url('/'); ?>" class="homelink" target="_blank">Website</a></h3>
                                 </article>
                             </div>
                         </div>                    
